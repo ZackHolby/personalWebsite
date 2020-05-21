@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./effects.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="typeWriter()">
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="images/siteVideoEdited.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3" id="titleName"></h1>
+              <p class="lead mb-0" id="titleInfo"></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--
+      <section class="my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+              <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+              <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+              <p class="mb-0">
+                Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/engineeringOSU.png" alt="Engineering Image">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">School</h5>
+                <div class="card-body">
+                  <p class="card-text">Studying Computer Science and Engineering with a strong interest in web development. Currently working on this personal website and a sentiment analysis project involving twitter.
+                    I will be continuing to develop my computer science skills as a Software Engineering Intern for Capital One based out of McLean, Virginia!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/basketballPic2.jpg" alt="Basketball Image" style="height:60%">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Activity</h5>
+                <div class="card-body">
+                  <p class="card-text">Practice player for Women's Basketball team and played Club Tennis first 2 years. Attempting to get more involved with running and weightlifting as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/hawaiiPic.jpg" alt="Traveling Image" style="height:60%">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Interests</h5>
+                <div class="card-body">
+                  <p class="card-text">Exploring new horizions outside academia such as traveling, video/photo editing, Philosophy. My favorite areas of philsophy involve Ethics and morality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+              <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+              <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+              <p class="mb-0">
+                Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

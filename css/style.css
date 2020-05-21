@@ -1,0 +1,187 @@
+  header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .extra-section {
+    margin-bottom: 2rem !important;
+    background-color: lightblue;
+  }
+
+  .card-img-top{
+      padding-left:1.2rem;
+      padding-right:1.2rem;
+      padding-top:1.2rem;
+  }
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+
+
+
+/**{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:#333;
+}
+
+.video-header{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container{
+    max-width: 960px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align: center;
+}
+
+.fullscreen-vid-wrap{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+.fullscreen-vid-wrap video{
+    transform: translate(-10%,-10%);
+}
+
+.fullscreen-vid-wrap{
+    min-width: 960px;
+    min-height:100vh;
+}
+
+.header-overlay{
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:black;
+    z-index:1;
+    opacity:0.1;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.header-content p{
+    font-size: 1.5rem;
+    display:block;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    background:#34b3a0;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+.section{
+    padding:20px 0px;
+}
+
+
+.extra-curricular{
+    min-height:75vh;
+    min-width:100vw;
+    border: 1px solid;
+}
+
+.bball{
+    padding: 15px 0px;
+}
+
+.womens-bball{
+    background-image: url(../images/basketballPic.jpg);
+    border-radius: 30%;
+    min-height:45vh;
+    max-width:30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -9vh;
+    margin: 0 auto;
+
+}
+
+.bball-content{
+    padding-top: 15px;
+}
+
+.row{
+    border: 1px solid red;
+    width:100vw;
+    height: 70vh;
+    margin:0;
+    padding:0;
+    justify-content: center;
+    text-align:center;
+}
+
+.col-sm-4{
+    border: 1px dotted green;
+}
