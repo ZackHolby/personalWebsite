@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Site</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> type="text/javascript"></script>
     <script src="./effects.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="typeWriter()">
     <header>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="images/siteVideoEdited.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100">
-          <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
-              <h1 class="display-3" id="titleName"></h1>
-              <p class="lead mb-0" id="titleInfo"></p>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar bg-light">
+          <a class="navbar-brand" style="color:black;" href="#">
+            <img src="./images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+             Holby
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#videoHeader">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#aboutMe">About Me</a>
+              <a class="nav-item nav-link" href="#test">Pricing</a>
             </div>
           </div>
-        </div>
+        </nav>
+          <video id="videoHeader"playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index: 0;">
+            <source src="images/siteVideoEdited.mp4" type="video/mp4">
+          </video>
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
+                <h1 class="display-3" id="titleName"></h1>
+                <p class="lead mb-0" id="titleInfo"></p>
+              </div>
+            </div>
+          </div>
       </header>
-      <!--
-      <section class="my-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
-              <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
-              <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
-              <p class="mb-0">
-                Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
-      <section class="py-5 bg-light">
+
+      <section class="py-5 bg-light" id="aboutMe">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
@@ -77,7 +82,7 @@
         </div>
       </section>
 
-      <section class="py-5 bg-dark">
+      <section class="py-5 bg-dark" id="test">
         <div class="container">
           <div class="row">
             <div class="col-md-8 mx-auto">
@@ -91,5 +96,6 @@
           </div>
         </div>
       </section>
+
 </body>
 </html>
