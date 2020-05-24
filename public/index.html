@@ -34,6 +34,8 @@
         </nav>
           <video id="videoHeader"playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index: 0;">
             <source src="images/siteVideoEdited.mp4" type="video/mp4">
+            <source src="images/siteVideoEdited.webm" type="video/webm">
+            <source src="images/siteVideoEdited.ogv" type="video/ogg">  
           </video>
           <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
@@ -96,6 +98,21 @@
           </div>
         </div>
       </section>
+
+      <div class="contact-title">
+        <h1>Hello Just testing php!</h1>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form" method="post" action="contact.php">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br />
+          <input name="email" type="text" class="form-control" placeholder="Your Email" required>
+          <br />
+          <textarea name="message" class="form-control" placeholder="message here..." row="4" required></textarea>
+          <br />
+          <input type="submit" class="form-control submit" value="Send Message">
+        </form>
+      </div>
 
 </body>
 </html>
