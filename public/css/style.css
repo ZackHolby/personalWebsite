@@ -56,15 +56,10 @@
       display: none;
     }
   }
+  .li{
+    cursor: pointer !important;
+   }
 
-  /*
-  .navbar.navbar-1 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=000');
-    background-color: white;
-    z-index:1;
-
-    }
- */
     .nav-link{
         color:black;
     }
@@ -72,6 +67,7 @@
     .active {
         text-decoration: underline;
     }
+
 
 /**{
     box-sizing: border-box;
