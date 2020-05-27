@@ -19,3 +19,14 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
+
+function playVideo() {
+    var vid = document.getElementById("videoHeader");
+    vid.play();
+}
+
+function pauseVideo() {
+    var vid = document.getElementById("videoHeader");
+    vid.pause();
+}
