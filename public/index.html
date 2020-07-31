@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Site</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./effects.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+</head>
+<body onload="typeWriter()">
+    <header>
+      <div class="overlay"></div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar bg-light">
+        <a class="navbar-brand" style="color:black;" href="#">
+          <img src="./images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Holby
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#videoHeader">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#aboutMe">About Me</a>
+            <a class="nav-item nav-link" href="#test">Pricing</a>
+          </div>
+        </div>
+      </nav>
+      <video id="videoHeader" autoplay loop muted playsinline>
+        <source src="images/siteVideoEdited.mp4" type="video/mp4">
+        <source src="images/siteVideoEdited.webm" type="video/webm">
+        <source src="images/siteVideoEdited.ogv" type="video/ogg">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3" id="titleName"></h1>
+            <p class="lead mb-0" id="titleInfo"></p>
+          </div>
+        </div>
+      </div>
+      </header>
+
+      <section class="py-5 bg-light" id="aboutMe">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/engineeringOSU2.png" alt="Engineering Image">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">School</h5>
+                <div class="card-body">
+                  <p class="card-text">Studying Computer Science and Engineering with a strong interest in web development. Currently working on this personal website and a sentiment analysis project involving twitter.
+                    I will be continuing to develop my computer science skills as a Software Engineering Intern for Capital One based out of McLean, Virginia!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/basketballPic2.jpg" alt="Basketball Image" style="height:60%">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Activity</h5>
+                <div class="card-body">
+                  <p class="card-text larger-image">Practice player for Women's Basketball team and played Club Tennis first 2 years. Attempting to get more involved with running and weightlifting as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card h-100">
+                <img class="card-img-top" src="./images/hawaiiPic.jpg" alt="Traveling Image" style="height:60%">
+                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Interests</h5>
+                <div class="card-body">
+                  <p class="card-text larger-image">Exploring new horizions outside academia such as traveling, video/photo editing, Philosophy. My favorite areas of philsophy involve Ethics and morality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-dark" id="test">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+              <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+              <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+              <p class="mb-0">
+                Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<<<<<<< HEAD:index.html
+      <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Reach Out!</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home"></i>Columbus, OH 43201</p>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true">Holbrook.224@osu.edu</i>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true">937-344-8169</i>
+        
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+  <div class="bg-light">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Check out my other professional outlets!</h6>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          <!-- Github -->
+          <a class="gh-ic" href="https://github.com/ZackHolby" style="color:black;">
+            <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" href="https://www.linkedin.com/in/zachary-holbrook-a9a344157/" style="color:black;">
+            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+</footer>
+<!-- Footer -->
+=======
+      <div class="contact-title">
+        <h1>Hello Just testing php!</h1>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form" method="post" action="contact.php">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br />
+          <input name="email" type="text" class="form-control" placeholder="Your Email" required>
+          <br />
+          <textarea name="message" class="form-control" placeholder="message here..." row="4" required></textarea>
+          <br />
+          <input type="submit" class="form-control submit" value="Send Message">
+        </form>
+      </div>
+>>>>>>> 32c8a5fb812b9437bf172c524b4bf99f653c0977:public/index.html
+
+</body>
+</html>
