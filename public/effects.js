@@ -20,16 +20,3 @@ $(document).ready(function () {
     });
 });
 
-<<<<<<< HEAD:effects.js
-=======
-
-function playVideo() {
-    var vid = document.getElementById("videoHeader");
-    vid.play();
-}
-
-function pauseVideo() {
-    var vid = document.getElementById("videoHeader");
-    vid.pause();
-}
->>>>>>> 32c8a5fb812b9437bf172c524b4bf99f653c0977:public/effects.js
