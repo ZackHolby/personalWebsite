@@ -1,3 +1,9 @@
+  body{
+      min-width: 450px;       /* Suppose you want minimum width of 1000px */
+      width: auto !important;  /* Firefox will set width as auto */
+      width:450px;            /* As IE6 ignores !important it will set width as 1000px; */
+  }
+  
   header {
     position: relative;
     background-color: black;
@@ -6,6 +12,11 @@
     width: 100%;
     overflow: hidden;
   }
+
+  .fa:before{
+      padding-right:10px;
+  }
+
   
   header video {
     position: absolute;
@@ -48,6 +59,12 @@
       padding-right:1.2rem;
       padding-top:1.2rem;
   }
+
+
+  .larger-image{
+      padding-bottom: 25px;
+  }
+
   @media (pointer: coarse) and (hover: none) {
     header {
       background: black no-repeat center center scroll;
@@ -57,14 +74,30 @@
     }
   }
 
-  /*
-  .navbar.navbar-1 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=000');
-    background-color: white;
-    z-index:1;
 
+    @media (min-width: 450px) {
+      .col-lg-4{
+        padding: 7.5px 7.5px 7.5px 7.5px;
+      }
+      .col-md-12{
+        padding: 7.5px 7.5px 7.5px 7.5px;
+      }
+      .col-md-6{
+        padding: 7.5px 7.5px 7.5px 7.5px;
+      }
+      .col-sm-12{
+        padding: 7.5px 7.5px 7.5px 7.5px;
+      }
     }
- */
+
+    @media (min-width: 992px) {
+        .container{
+            max-width: 1140px;
+    }
+
+
+    
+
     .nav-link{
         color:black;
     }
