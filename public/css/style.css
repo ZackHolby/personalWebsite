@@ -23,6 +23,7 @@ overflow: hidden;
 }
 
 .projects{
+    padding-top: 1rem;
     color: white;
     text-align: center;
 }
