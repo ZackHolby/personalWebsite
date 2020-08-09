@@ -87,7 +87,7 @@ header video {
 }
 
 
-@media (min-width: 450px) {
+@media (min-width: 150px) {
     .col-lg-4{
     padding: 7.5px 7.5px 7.5px 7.5px;
     }
@@ -98,6 +98,9 @@ header video {
     padding: 7.5px 7.5px 7.5px 7.5px;
     }
     .col-sm-12{
+    padding: 7.5px 7.5px 7.5px 7.5px;
+    }
+    .col-12{
     padding: 7.5px 7.5px 7.5px 7.5px;
     }
 }
