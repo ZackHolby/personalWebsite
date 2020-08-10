@@ -3,7 +3,7 @@
   <!--meta-->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Holby Personal Website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,194 +18,194 @@
 </head>
 <body onload="typeWriter()">
 
-    <!-- Header component with video load-->
-    <header>
-        <div class="overlay"></div>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar bg-light">
-          <a class="navbar-brand" style="color:black;" href="#">
-            <img src="./images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-             Holby
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link active" href="#videoHeader">Home<span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#aboutMe">About Me</a>
-              <a class="nav-item nav-link" href="#experience">Experience</a>
-              <a class="nav-item nav-link" href="#contact">Contact</a>
-            </div>
-          </div>
-        </nav>
-          <video id="videoHeader" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index: 0;">
-            <source src="images/siteVideoEdited.mp4" type="video/mp4">
-          </video>
-          <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-              <div class="w-100 text-white">
-                <h1 class="display-3" id="titleName"></h1>
-                <p class="lead mb-0" id="titleInfo"></p>
-              </div>
-            </div>
-          </div>
-      </header>
-      <!-- end header-->
-
-
-      <!-- about me section -->
-      <section class="py-5 bg-light" id="aboutMe">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/engineeringOSU2.png" alt="Engineering Image">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">School</h5>
-                <div class="card-body">
-                  <p class="card-text">Studying Computer Science and Engineering with a strong interest in web development. Currently working on this personal website and a sentiment analysis project involving twitter.
-                    I will be continuing to develop my computer science skills as a Software Engineering Intern for Capital One based out of McLean, Virginia!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/basketballPic2.jpg" alt="Basketball Image" style="height:60%">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Activity</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Practice player for Women's Basketball team and played Club Tennis first 2 years. Attempting to get more involved with running and weightlifting as well.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/hawaiiPic.jpg" alt="Traveling Image" style="height:60%">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Interests</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Exploring new horizions outside academia such as traveling, video/photo editing, Philosophy. My favorite areas of philsophy involve Ethics and morality.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Header component with video load-->
+  <header>
+    <div class="overlay"></div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar bg-light">
+      <a class="navbar-brand" style="color:black;" href="#">
+        <img src="./images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Holby
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#videoHeader">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#aboutMe">About Me</a>
+          <a class="nav-item nav-link" href="#experience">Experience</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
-      </section>
-      <!--End about me-->
-
-      <!-- Project and Previous work experience-->
-      <section class="py-5 bg-dark" id="experience">
-        <div class="container">
-          <h2 class="internship">Internship Experience</h2>
-          <div class="row">
-            <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-12 offset-sm-0 col-12 offset-0">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/capitalOne3.png" alt="Capital One" style="max-height: 200px; min-height:150px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: 1rem 0 1rem 0;">Software Engineering Intern at Capital One</h5>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/geDigital2.png" alt="GE Digital" style="max-height: 300px; min-height:150px">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: .019rem 0 1rem 0;">Digital Technology Intern at GE Digital</h5>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/tenet3.png" alt="Tenet3" style="min-height: 150px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: 1rem 0 1rem 0;">Cyber Security Intern at Tenet3</h5>
-              </div>
-            </div>
-          </div>
-
-          <h2 class="projects">Projects</h2>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/twitter.jpg" alt="Twitter Sentiment Analysis" style="max-height: 250px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Tweet Sentiment Analysis</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Building a Web App that pulls tweets from twitter API and analyzes individual sentiment. Sentiment is projected onto Angular Frontend from Python Flask backend. Using AWS Lambda on chron job for daily pulling of fresh tweet data. (In Progress)</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/blackjack.png" alt="Blackjack" style="min-height: 200px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Blackjack Faceoff</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Team of 4 developed 1v1 Blackjack application that to duel friends in Blackjack and keeps statistics on play history. Developed using Ruby on Rails.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/personalSite.png" alt="Personal Website" style="min-height: 250px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">This Personal Website</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Created a personal webpage to showcase experiences and interests. Used HTML5/CSS/vanilla JS. Used Bootstrap4 for dyanamic functionality and Firebase to host and deploy webpage.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-              <div class="card h-100">
-                <img class="card-img-top" src="./images/shotData.png" alt="Kobe Shot Data" style="max-height: 350px;">
-                <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Kobe Bryant Data Analysis</h5>
-                <div class="card-body">
-                  <p class="card-text larger-image">Leveraged Python and Pandas to read Kobe's accumulated shot data and display using pyplot. Cleaned data for easier manipulation once in pandas dataframe.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--End project-->
-
-
-      <!-- footer with contact and links-->
-
-          <!--contant and reach out-->
-    <footer class="page-footer font-small unique-color-dark" id="contact">
-      <div class="container text-center text-md-left mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase font-weight-bold">Reach Out!</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
-            <p>Feel free to reach out regarding any content you see on this webpage, or if you just want to connect! I am always looking to expand my network and learn about new opportunities.</p>
-          </div>
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase font-weight-bold">Contact</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p><i class="fa fa-home"></i>Columbus, OH 43201</p>
-            <a href = "mailto: holbrook.224@osu.edu"><p style="color: black;"><i class="fa fa-envelope" aria-hidden="true"></i>Holbrook.224@osu.edu</p></a>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>937-344-8169</p>
-            <a href="./Zachary Holbrook CompSci Resume Website.pdf" download><p style="color: black;"><i class="fa fa-arrow-down" aria-hidden="true"></i>Resume</p></a>
-            
+      </div>
+    </nav>
+      <video id="videoHeader" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="z-index: 0;">
+        <source src="images/siteVideoEdited.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100 w-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3" id="titleName"></h1>
+            <p class="lead mb-0" id="titleInfo"></p>
           </div>
         </div>
       </div>
+  </header>
+  <!-- end header-->
 
-      <!-- links and resources-->
-      <div class="bg-light">
-        <div class="container">
-          <div class="row py-4 d-flex align-items-center">
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0">Check out my other professional outlets!</h6>
+
+  <!-- about me section -->
+  <section class="py-5 bg-light" id="aboutMe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-10 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/engineeringOSU2.png" alt="Engineering Image">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">School</h5>
+            <div class="card-body">
+              <p class="card-text">Studying Computer Science and Engineering with a strong interest in web development. Currently working on this personal website and a sentiment analysis project involving twitter.
+                I will be continuing to develop my computer science skills as a Software Engineering Intern for Capital One based out of McLean, Virginia!
+              </p>
             </div>
-
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
-              <a class="gh-ic" href="https://github.com/ZackHolby" style="color:black;">
-                <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-              </a>
-              <a class="li-ic" href="https://www.linkedin.com/in/zachary-holbrook-a9a344157/" style="color:black;">
-                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-              </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/basketballPic2.jpg" alt="Basketball Image" style="height:60%">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Activity</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Practice player for Women's Basketball team and played Club Tennis first 2 years. Attempting to get more involved with running and weightlifting as well.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/hawaiiPic.jpg" alt="Traveling Image" style="height:60%">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Interests</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Exploring new horizions outside academia such as traveling, video/photo editing, Philosophy. My favorite areas of philsophy involve Ethics and morality.</p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+  </section>
+  <!--End about me-->
+
+  <!-- Project and Previous work experience-->
+  <section class="py-5 bg-dark" id="experience">
+    <div class="container">
+      <h2 class="internship">Internship Experience</h2>
+      <div class="row">
+        <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-12 offset-sm-0 col-12 offset-0">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/capitalOne3.png" alt="Capital One" style="max-height: 200px; min-height:150px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: 1rem 0 1rem 0;">Software Engineering Intern at Capital One</h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/geDigital2.png" alt="GE Digital" style="max-height: 300px; min-height:150px">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: .019rem 0 1rem 0;">Digital Technology Intern at GE Digital</h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/tenet3.png" alt="Tenet3" style="min-height: 150px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin: 1rem 0 1rem 0;">Cyber Security Intern at Tenet3</h5>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="projects">Projects</h2>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/twitter.jpg" alt="Twitter Sentiment Analysis" style="max-height: 250px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Tweet Sentiment Analysis</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Building a Web App that pulls tweets from twitter API and analyzes individual sentiment. Sentiment is projected onto Angular Frontend from Python Flask backend. Using AWS Lambda on chron job for daily pulling of fresh tweet data. (In Progress)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/blackjack.png" alt="Blackjack" style="min-height: 200px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Blackjack Faceoff</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Team of 4 developed 1v1 Blackjack application that to duel friends in Blackjack and keeps statistics on play history. Developed using Ruby on Rails.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/personalSite.png" alt="Personal Website" style="min-height: 250px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">This Personal Website</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Created a personal webpage to showcase experiences and interests. Used HTML5/CSS/vanilla JS. Used Bootstrap4 for dyanamic functionality and Firebase to host and deploy webpage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="card h-100">
+            <img class="card-img-top" src="./images/shotData.png" alt="Kobe Shot Data" style="max-height: 350px;">
+            <h5 class="card-title" style="text-align: center; margin-top: 1.2rem; margin-bottom:0;">Kobe Bryant Data Analysis</h5>
+            <div class="card-body">
+              <p class="card-text larger-image">Leveraged Python and Pandas to read Kobe's accumulated shot data and display using pyplot. Cleaned data for easier manipulation once in pandas dataframe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End project-->
+
+
+  <!-- footer with contact and links-->
+
+  <!--contant and reach out-->
+  <footer class="page-footer font-small unique-color-dark" id="contact">
+    <div class="container text-center text-md-left mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Reach Out!</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;">
+          <p>Feel free to reach out regarding any content you see on this webpage, or if you just want to connect! I am always looking to expand my network and learn about new opportunities.</p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p><i class="fa fa-home"></i>Columbus, OH 43201</p>
+          <a href = "mailto: holbrook.224@osu.edu"><p style="color: black;"><i class="fa fa-envelope" aria-hidden="true"></i>Holbrook.224@osu.edu</p></a>
+          <p style=color:black;><i class="fa fa-phone" aria-hidden="true"></i>937-344-8169</p>
+          <a href="./Zachary Holbrook CompSci Resume Website.pdf" download><p style="color: black;"><i class="fa fa-arrow-down" aria-hidden="true"></i>Resume</p></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- links and resources-->
+    <div class="bg-light">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Check out my other professional outlets!</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <a class="gh-ic" href="https://github.com/ZackHolby" style="color:black;">
+              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+            </a>
+            <a class="li-ic" href="https://www.linkedin.com/in/zachary-holbrook-a9a344157/" style="color:black;">
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
 </body>
 </html>
